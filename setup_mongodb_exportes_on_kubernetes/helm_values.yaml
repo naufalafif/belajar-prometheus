@@ -1,0 +1,10 @@
+
+# [mongodb[+srv]://][user:pass@]host1[:port1][,host2[:port2],...][/database][?options]
+mongodb:
+  uri: "mongodb://mongodb-service:27017"
+
+
+serviceMonitor:
+  additionalLabels: {
+    release: prom
+  }

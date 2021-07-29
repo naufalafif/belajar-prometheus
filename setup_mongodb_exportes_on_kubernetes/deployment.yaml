@@ -1,0 +1,26 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: mongodb
+  name: mongodb
+  namespace: monitoring
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mongodb
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        app: mongodb
+    spec:
+      containers:
+      - image: mongo:latest
+        name: mongodb
+        imagePullPolicy: IfNotPresent
+        resources: {}
+status: {}

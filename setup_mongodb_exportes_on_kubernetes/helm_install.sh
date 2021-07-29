@@ -1,0 +1,1 @@
+helm install mongodb-exporter prometheus-community/prometheus-mongodb-exporter  -n monitoring -f helm_values.yaml

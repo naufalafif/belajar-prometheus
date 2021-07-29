@@ -1,0 +1,1 @@
+setup mongodb exporter on kubernetes with prometheus installed
