@@ -1,4 +1,4 @@
-# Setup Prometheus on VM
+# Setup Prometheus on Docker Compose
 
 #### Note !
 untuk menjalankan run.sh pastikan telah

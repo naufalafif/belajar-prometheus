@@ -13,7 +13,7 @@ After=network.target
 
 [Service]
 Type=simple
-ExecStart=/usr/local/bin/prometheus/prometheus --config.file=/usr/local/bin/prometheus/prometheus.yml
+ExecStart=/usr/local/bin/prometheus/prometheus --config.file=/home/vagrant/prometheus.yml
 
 [Install]
 WantedBy=multi-user.target

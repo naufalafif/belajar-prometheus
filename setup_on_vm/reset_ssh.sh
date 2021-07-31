@@ -1,0 +1,1 @@
+ssh-keygen -f "/home/aqi/.ssh/known_hosts" -R "192.168.33.25"
