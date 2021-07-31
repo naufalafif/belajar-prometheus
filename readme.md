@@ -1,9 +1,17 @@
 # Belajar Prometheus
 
+Prometheus adalah alat monitoring open source yang bekerja dengan cara mengumpulkan data metric dari node/db/app/dll dalam interval tertentu. prometheus dapat menampilakan data dalam bentuk grafik, mentrigger alert, & menyediakan query language untuk pengambilan data.
+
 ### Komponen Utama
+Prometheus memiliki 3 komponen utama yaitu :
 1) Retrieval
-2) Storage
-3) PromQL
+retrieval adalah komponen yang bertugas mengumpulkan data metric dari berbagai sumber. sumber data bisa dari server prometheus sendiri, exporter, push gateway, service discovery ataupun aplikasi apapun yang telah mengexpose data metric pada url /metric
+
+3) Storage
+storage adalah penyimpanan data dari prometheus
+
+5) PromQL
+promQL adalah query language dari prometheus yang digunakan untuk menampilkan data sesuai kebutuhan.
 
 #### Architecture
 <img src='architecture.svg'>
