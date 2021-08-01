@@ -2,7 +2,7 @@
 
 installasi/setup prometheus menggunakan docker-compose
 
-# Setup
+#### Setup
 setup yang dilakukan dari contoh ini adalah :
 1) membuat docker network
 ```yaml

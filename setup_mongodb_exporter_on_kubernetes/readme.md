@@ -3,7 +3,7 @@
 installasi/setup mongo exporter di kubernetes dapat dilakukan menggunakan helm chart dari 
 prometheus-community
 
-# Setup
+#### Setup
 setup yang dilakukan dari contoh ini adalah :
 1) membuat deployment mongodb. 
 `kubectl apply -f k8s_deployment.yaml`
