@@ -16,7 +16,7 @@ promQL adalah query language dari prometheus yang digunakan untuk menampilkan da
 #### Architecture
 <img src='architecture.svg'>
 
-#### Contoh
+#### Contoh Setup
 1) Setup On VM [open](setup_on_vm)
 2) Setup On Docker Compose [open](setup_on_docker_compose)
 3) Setup On Kubernetes [open](setup_on_kubernetes)
