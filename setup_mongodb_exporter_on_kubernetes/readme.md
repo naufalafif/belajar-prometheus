@@ -12,7 +12,7 @@ setup yang dilakukan dari contoh ini adalah :
 3) menginstall exporter menggunakan helm
 `helm install mongodb-exporter prometheus-community/prometheus-mongodb-exporter -f helm_values.yaml`
 ketika melakukan installasi exporter, pastikan telah menyesuaikan label pada helm_values.yaml. label harus sama dengan label yang digunakan oleh deployment & servicemonitor prometeheus
-```
+```yaml
 serviceMonitor:
   additionalLabels: {
     release: prom <----- label yang dimaksud
