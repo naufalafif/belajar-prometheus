@@ -1,0 +1,1 @@
+./reset_ssh.sh 2> /dev/null; vagrant destroy 2> /dev/null; vagrant up
