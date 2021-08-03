@@ -1,6 +1,6 @@
 # Setup Prometheus on Docker Compose
 
-installasi/setup prometheus menggunakan docker-compose
+instalasi/setup prometheus menggunakan docker-compose
 
 #### Setup
 setup yang dilakukan dari contoh ini adalah :
@@ -40,6 +40,12 @@ service prometheus membuild image baru untuk memasukan config prometheus.yml
     networks:
       - promnet
 ```
+
+#### Cara Menjalankan
+1) jalankan menggunakan docker-compose
+`docker-compose up`
+
+atau cukup jalankan file `run.sh`
 #### Note !
 untuk menjalankan run.sh pastikan telah
 1) menginstall vagrant

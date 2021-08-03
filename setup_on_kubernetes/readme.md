@@ -1,9 +1,9 @@
 # Setup Prometheus on Kubernetes
 
-installasi/setup prometheus di kubernetes menggunakan helm
+instalasi/setup prometheus di kubernetes menggunakan helm
 
 #### Setup
-terdapat beberapa komponen yang di install ketika melakukan installasi menggunakan helm
+terdapat beberapa komponen yang di install ketika melakukan instalasi menggunakan helm
 1) Prometheus Deployment
 2) Service Monitor
 service monitor adalah custom komponen di k8s (crd) yang bertugas menscrape target prometheus
@@ -16,6 +16,12 @@ prometheus rule ada custom komponen di k8s (crd) yang berisi rules prometheus (c
 #### Proses Pengumpulan Data Metric Prometheus dalam Kubernetes
 <img src='flow_on_k8s.webp'>
 
+
+#### Cara Menjalankan
+1) install prometheus-stack menggunakan helm
+`helm install prom prometheus-community/kube-prometheus-stack`
+
+atau cukup jalankan file `run.sh`
 #### Note !
 untuk menjalankan run.sh pastikan telah
 1) menginstall helm
