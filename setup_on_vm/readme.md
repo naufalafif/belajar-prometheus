@@ -15,6 +15,8 @@ pada masing2 script instalasi dilakukan 3 hal. download app, extract & pindahkan
 #### Cara Menjalankan
 1) jalankan menggunakan vagrant
 `vagrant up`
+
+atau cukup jalankan file `run.sh`
 #### Note !
 untuk menjalankan run.sh pastikan telah
 1) menginstall vagrant
