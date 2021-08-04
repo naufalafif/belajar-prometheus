@@ -19,10 +19,5 @@ services:
     image: prom/node-exporter
     networks: 
       - promnet
-  curl:
-    image: curlimages/curl
-    command: sleep 1d
-    networks: 
-      - promnet
 networks:
   promnet:
