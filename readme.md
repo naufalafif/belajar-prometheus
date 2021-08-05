@@ -5,7 +5,9 @@ Prometheus adalah alat monitoring open source yang bekerja dengan cara mengumpul
 
 ### Architecture
 <img src='architecture.png'>
+
 ### Prometheus Service
+
 #### Komponen
 Prometheus Servert memiliki 3 komponen yaitu :
 1) Retrieval
