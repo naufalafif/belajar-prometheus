@@ -4,12 +4,12 @@ Prometheus adalah alat monitoring open source yang bekerja dengan cara mengumpul
 
 
 ### Architecture
-<img src='architecture.svg'>
+<img src='architecture.png'>
 ### Prometheus Service
 #### Komponen
 Prometheus Servert memiliki 3 komponen yaitu :
 1) Retrieval
-retrieval adalah komponen yang bertugas mengumpulkan data metric dari berbagai sumber. sumber data bisa dari server prometheus sendiri, exporter, push gateway, service discovery ataupun aplikasi apapun yang telah mengexpose data metric pada url /metric
+retrieval adalah komponen yang bertugas mengumpulkan data metric dari berbagai sumber. sumber data bisa dari server prometheus sendiri, exporter, push gateway, service discovery ataupun aplikasi apapun yang telah mengexpose data metric pada url /metric. untuk detail silakan klik link berikut [baca....](retrieval.md)
 
 3) Storage
 storage adalah penyimpanan data dari prometheus
