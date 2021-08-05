@@ -1,4 +1,4 @@
-#### Config File
+### Config File
 config file adalah file konfigurasi dari prometeheus yang berisi bbrp konfigurasi yaitu global config, rules, alert & scrape. konfigurasi ditulis dalam formal yaml.
 
 
