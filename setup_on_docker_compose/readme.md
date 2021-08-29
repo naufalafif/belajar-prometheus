@@ -42,7 +42,5 @@ service prometheus membuild image baru untuk memasukan config prometheus.yml
 ```
 
 #### Cara Menjalankan
-1) jalankan menggunakan docker-compose
-`docker-compose up`
-
+jalankan menggunakan docker-compose `docker-compose up`
 atau cukup jalankan file `run.sh`
