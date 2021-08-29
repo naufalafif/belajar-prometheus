@@ -22,7 +22,7 @@ promQL adalah query language dari prometheus yang digunakan untuk menampilkan da
 #### Config File
 config file adalah file konfigurasi dari prometeheus yang berisi bbrp konfigurasi yaitu global config, rules, alert & scrape. konfigurasi ditulis dalam formal yaml. untuk detail silakan klik link berikut [baca....](configfile.md)
 
-#### Contoh Setup/Instalasi
+#### Contoh
 1) Setup On VM [open](setup_on_vm)
 2) Setup On Docker Compose [open](setup_on_docker_compose)
 3) Setup On Kubernetes [open](setup_on_kubernetes)
