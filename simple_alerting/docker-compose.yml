@@ -1,0 +1,23 @@
+version: "3.7"
+services:
+  grafana:
+    image: grafana/grafana
+    ports:
+      - '4000:3000'
+    networks:
+      - promnet
+  prometheus:
+    build:
+      context: .
+      dockerfile: prometheus.Dockerfile
+    image: compose_prometheus
+    networks:
+      - promnet
+    ports: 
+      - 9090:9090
+  node_exporter:
+    image: prom/node-exporter
+    networks: 
+      - promnet
+networks:
+  promnet:
