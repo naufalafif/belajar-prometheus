@@ -27,3 +27,4 @@ config file adalah file konfigurasi dari prometeheus yang berisi bbrp konfiguras
 2) Setup On Docker Compose [open](setup_on_docker_compose)
 3) Setup On Kubernetes [open](setup_on_kubernetes)
 4) Setup MongoDB Expoter On Kubernetes [open](setup_mongodb_exporter_on_kubernetes)
+5) Simple Alerting [open](simple_alerting)
