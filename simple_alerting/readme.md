@@ -46,4 +46,5 @@ jalankan menggunakan docker-compose `docker-compose up`
 atau cukup jalankan file `run.sh`
 
 untuk melihat alert yang sudah terpasang, buka http://localhost:9090/classic/alerts
+
 untuk mentrigger alert, matikan container node_exporter. contoh `docker container stop $ID_CONTAINER`
