@@ -46,6 +46,3 @@ service prometheus membuild image baru untuk memasukan config prometheus.yml
 `docker-compose up`
 
 atau cukup jalankan file `run.sh`
-#### Note !
-untuk menjalankan run.sh pastikan telah
-1) menginstall vagrant
