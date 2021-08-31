@@ -1,0 +1,11 @@
+groups:
+  - name: myrules
+    rules:
+      # Recording Rules 
+      - record: job:prometheus_http_requests:avg
+        expr: avg by(job) (rate(prometheus_http_requests_total[5m]))
+
+      # Alerting Rules
+      - alert: NodeExporterDown
+        expr: up{job='node'} == 0
+        for: 20s
