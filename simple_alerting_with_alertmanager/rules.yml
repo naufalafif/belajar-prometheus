@@ -9,3 +9,9 @@ groups:
       - alert: NodeExporterDown
         expr: up{job='node'} == 0
         for: 20s
+        labels:
+          severity: critical
+        annotations:
+          summary: 'Node Exporter Down'
+          description: 'Node Exporter is down on instance {{ $labels.instance }} | job {{ $labels.job }}'
+          others: 'others'
