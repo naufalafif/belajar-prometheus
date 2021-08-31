@@ -8,3 +8,4 @@ groups:
       # Alerting Rules
       - alert: NodeExporterDown
         expr: up{job='node'} == 0
+        for: 1m
