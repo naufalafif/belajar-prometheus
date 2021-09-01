@@ -1,11 +1,5 @@
 version: "3.7"
 services:
-  grafana:
-    image: grafana/grafana
-    ports:
-      - '4000:3000'
-    networks:
-      - promnet
   prometheus:
     build:
       context: .
