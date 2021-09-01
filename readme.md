@@ -31,7 +31,6 @@ global:
 
 1) **Recording Rules**
 Recording rules adalah precomputed timestamp hasil dari sebuah query. untuk lebih jelas, coba perhatikan contoh rules dibawah
-``
 
 ```yaml
 groups:
@@ -55,3 +54,4 @@ pada proses digambar diatas, prometheus akan menyimpan timestamp dari target & m
 3) Setup On Kubernetes [open](setup_on_kubernetes)
 4) Setup MongoDB Expoter On Kubernetes [open](setup_mongodb_exporter_on_kubernetes)
 5) Simple Alerting [open](simple_alerting)
+6) Simple Alerting with Alert Manager [open](simple_alerting_with_alertmanager)
