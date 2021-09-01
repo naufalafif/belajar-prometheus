@@ -29,7 +29,8 @@ global:
   evaluation_interval: 15s
 ```
 
-1) **Recording Rules**
+**Recording Rules**
+
 Recording rules adalah precomputed timestamp hasil dari sebuah query. untuk lebih jelas, coba perhatikan contoh rules dibawah
 
 ```yaml
