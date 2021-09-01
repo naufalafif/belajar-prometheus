@@ -1,6 +1,6 @@
-# Simple Alerting
+# Simple Alerting with Alert Manager
 
-simple alerting menggunakan docker-compose
+simple alerting with alert manager menggunakan docker-compose
 
 #### Setup
 setup yang dilakukan dari contoh ini adalah :
@@ -31,17 +31,33 @@ service prometheus membuild image baru untuk memasukan config prometheus.yml & r
       - promnet
 ```
 
-4) setup grafana
+4) setup Alert Manager
 ```yaml
-  grafana:
-    image: grafana/grafana
+  alert_manager:
+    build:
+      context: .
+      dockerfile: alert_manager.Dockerfile
+    image: compose_alertmanager
     ports:
-      - '4000:3000'
+      - '9093:9093'
     networks:
       - promnet
 ```
+service alert_manager membuild image baru untuk memasukan config alertmanager.yml
 
 #### Cara Menjalankan
+sebelum dijalankan, pastikan mengubah config smtp pada alertmanager.yaml
+```yaml
+receivers:
+  - name: admin
+    email_configs:
+      - to: 'example@example.com'
+        from: 'example@example.com'
+        smarthost: smtp.gmail.com:587 <-- SMTP Host
+        auth_username: **************** <-- SMTP Username
+        auth_password: **************** <-- SMTP Password
+```
+
 jalankan menggunakan docker-compose `docker-compose up`
 atau cukup jalankan file `run.sh`
 
