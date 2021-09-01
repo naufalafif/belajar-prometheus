@@ -22,6 +22,33 @@ promQL adalah query language dari prometheus yang digunakan untuk menampilkan da
 #### Config File
 config file adalah file konfigurasi dari prometeheus yang berisi bbrp konfigurasi yaitu global config, rules, alert & scrape. konfigurasi ditulis dalam formal yaml. untuk detail silakan klik link berikut [baca....](configfile.md)
 
+#### Rules
+Prometheus memiliki 2 jenis rules yaitu recording rules & alerting rules. kedua rules tadi dapat di set dalam 1 file yang sama & di evaluasi oleh prometheus dalam interval tertentu, mengikuti global config 
+```yml
+global:
+  evaluation_interval: 15s
+```
+
+1) **Recording Rules**
+Recording rules adalah precomputed timestamp hasil dari sebuah query. untuk lebih jelas, coba perhatikan contoh rules dibawah
+``
+
+```yaml
+groups:
+  - name: myrules
+    rules:
+      - record: job:prometheus_http_requests:avg
+        expr: avg by(job) (rate(prometheus_http_requests_total[5m]))
+```
+
+dalam contoh diatas terdapat 1 rules dengan nama `job:prometheus_http_requests:avg` dan query untuk mencari rata2 rate request prometheus dalam 5 menit. query tersebut nantinya akan bisa digunakan cukup dengan menuliskan nama dari rules & akan mereturn value yang sama dengan query diatas.
+
+jika dilihat sekilas, recording rules mirip alias. tapi recoding rules bukanlah alias melainkan precomputed timestamp. atau dengan kata lain, value yang dikeluarkan oleh rules diatas adalah data yang sudah disimpan oleh prometheus sebagai timestamp baru. 
+
+<img src='recording-rules.jpg'>
+
+pada proses digambar diatas, prometheus akan menyimpan timestamp dari target & memproses precomputed timestamp berdasarkan rules & disimpan di storage yang sama.
+
 #### Contoh
 1) Setup On VM [open](setup_on_vm)
 2) Setup On Docker Compose [open](setup_on_docker_compose)
